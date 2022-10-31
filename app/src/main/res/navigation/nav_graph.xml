@@ -7,22 +7,33 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.tematihonov.animation.FirstFragment"
+        android:name="com.tematihonov.animation.MainFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_main">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_slotFragment"
+            app:destination="@id/SlotFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_cardFlipFragment"
+            app:destination="@id/cardFlipFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.tematihonov.animation.SecondFragment"
+        android:name="com.tematihonov.animation.presentation.fortuneWheel.FortuneWheelFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_wheel"/>
+    <fragment
+        android:id="@+id/SlotFragment"
+        android:name="com.tematihonov.animation.presentation.slot.SlotFragment"
+        android:label="fragment_slot"
+        tools:layout="@layout/fragment_slot" />
+    <fragment
+        android:id="@+id/cardFlipFragment"
+        android:name="com.tematihonov.animation.presentation.flipCard.CardFlipFragment"
+        android:label="fragment_card_flip"
+        tools:layout="@layout/fragment_card_flip" />
 </navigation>

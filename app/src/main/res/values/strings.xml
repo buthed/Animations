@@ -9,4 +9,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slot">Slot</string>
+    <string name="Wheel">Wheel</string>
+    <string name="spin">Spin</string>
+    <string name="flip">Flip</string>
+    <string name="flip_card">Flip card</string>
 </resources>
